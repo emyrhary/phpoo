@@ -1,21 +1,18 @@
 <?php
-class carro{
+class Carro{
     public $marca;
     public $modelo;
     public $ano;
 
-    //metodos
-    function __construct($marca, $modelo, $ano)
-    {
+    // Métodos
+    function __construct($marca, $modelo, $ano){
         $this->marca = $marca;
         $this->modelo = $modelo;
         $this->ano = $ano;
     }
-
-    //set
-
     function set_marca($marca){
         $this->marca = $marca;
+
     }
     function set_modelo($modelo){
         $this->modelo = $modelo;
@@ -23,9 +20,6 @@ class carro{
     function set_ano($ano){
         $this->ano = $ano;
     }
-
-    //get
-
     function get_marca(){
         return $this->marca;
     }
@@ -35,8 +29,6 @@ class carro{
     function get_ano(){
         return $this->ano;
     }
-
-    
 
 }
 
